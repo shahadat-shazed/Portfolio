@@ -10,31 +10,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <div class="cursor-glow"></div>
-    <nav class="navbar">
-        <div class="nav-brand">SHAHADAT HOSEN</div>
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#academia">Academics</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+
+    <!-- Global Theme Backgrounds -->
+    <div class="theme-grid-bg"></div>
+    <div class="theme-noise"></div>
+
+    
+    <nav id="sk-top-navbar">
+      <div class="sk-top-navbar-shell">
+        <div class="sk-top-navbar-inner">
+          <a href="#home" class="sk-brand">SHAHADAT HOSEN</a>
+
+          <div class="sk-desktop-menu">
+            <a href="#home" class="sk-nav-link">Home</a>
+            <a href="#about" class="sk-nav-link">About</a>
+            <a href="#projects" class="sk-nav-link">Portfolio</a>
+            <a href="#pricing" class="sk-nav-link">Pricing</a>
+            <a href="#why-me" class="sk-nav-link">Why Me</a>
+            <a href="#process" class="sk-nav-link">Process</a>
+            <a href="#testimonials" class="sk-nav-link">Reviews</a>
+          </div>
+
+          <div class="sk-cta-wrap">
+            <a href="https://wa.link/pe4nfi" target="_blank" rel="noopener noreferrer" class="sk-btn sk-btn-whatsapp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                <path d="M21 12a8.99 8.99 0 0 1-13.07 7.93L3 21l1.07-4.93A9 9 0 1 1 21 12Z"></path>
+              </svg>
+              <span>Hire Me</span>
+            </a>
+            <a href="#cta" class="sk-btn sk-btn-call">
+              <span>Contact</span>
+            </a>
+          </div>
+
+          <button id="sk-menu-toggle" class="sk-menu-toggle" aria-label="Toggle menu">
+            <svg id="sk-menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+            <svg id="sk-close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div id="sk-mobile-menu" class="sk-mobile-menu">
+          <div class="sk-mobile-menu-inner">
+            <a href="#home" class="sk-mobile-link">Home</a>
+            <a href="#about" class="sk-mobile-link">About</a>
+            <a href="#projects" class="sk-mobile-link">Portfolio</a>
+            <a href="#pricing" class="sk-mobile-link">Pricing</a>
+            <a href="#why-me" class="sk-mobile-link">Why Me</a>
+            <a href="#process" class="sk-mobile-link">Process</a>
+            <a href="#testimonials" class="sk-mobile-link">Reviews</a>
+            <a href="#cta" class="sk-mobile-link">Contact</a>
+
+            <div class="sk-mobile-actions">
+              <a href="https://wa.link/pe4nfi" target="_blank" rel="noopener noreferrer" class="sk-btn sk-btn-whatsapp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                  <path d="M21 12a8.99 8.99 0 0 1-13.07 7.93L3 21l1.07-4.93A9 9 0 1 1 21 12Z"></path>
+                </svg>
+                <span>Hire Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
+
 
     <main>
         <section id="home" class="hero">
@@ -45,15 +96,27 @@
                 <p class="hero-description">I craft meaningful digital experiences that connect buyers with brands,
                     blending creativity with data-driven precision.</p>
                 <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary">Work With Me</a>
+                    <a href="#cta" class="btn btn-primary">Work With Me</a>
                     <a href="#about" class="btn btn-secondary">Discover More</a>
                 </div>
             </div>
             <div class="hero-visual">
+                <div class="decorative-blur"></div>
+                <div class="rotating-ring ring-1"></div>
+                <div class="rotating-ring ring-2"></div>
+                <div class="rotating-ring ring-3"></div>
+                <div class="floating-badge badge-top-left">Vision</div>
+                <div class="floating-badge badge-bottom-right">Impact</div>
                 <div class="image-wrapper">
-                    <img src="https://i.ibb.co/5gDztVZ9/Call-center.jpg"
-                        alt="Shahadat Hosen Profile" class="profile-img">
+                    <div class="shine"></div>
+                    <div class="overlay-gradient"></div>
+                    <a href="https://ibb.co.com/M5PyFB2S">
+                        <img src="https://i.ibb.co.com/93ymQZ8g/Call-center.jpg" alt="Call-center" border="0" class="profile-img">
+                    </a>
                 </div>
+                <div class="float-dot dot-1"></div>
+                <div class="float-dot dot-2"></div>
+                <div class="float-dot dot-3"></div>
             </div>
         </section>
 
@@ -86,6 +149,116 @@
                         <div class="stat-card">
                             <h3>360+ Hours</h3>
                             <p>Instructional Leadership</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- E-Commerce & Specializations Section -->
+        <section id="ecommerce" class="relative py-24 sm:py-32 overflow-hidden bg-[#030712]">
+            <div class="absolute inset-0 ecom-grid-bg"></div>
+            <div class="ecom-glow-orb-1 bg-purple-600/10 w-[600px] h-[600px] rounded-full blur-[120px] absolute -top-[10%] -left-[10%]"></div>
+            <div class="ecom-glow-orb-2 bg-cyan-600/10 w-[500px] h-[500px] rounded-full blur-[100px] absolute bottom-0 right-0"></div>
+            
+            <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-20 animate-on-scroll">
+                    <span class="ecom-badge">Our Expertise</span>
+                    <h2 class="font-outfit text-4xl sm:text-6xl font-bold tracking-tight mb-6 mt-4">
+                        <span class="ecom-heading-gradient">Core</span>
+                        <span class="text-white">Specializations</span>
+                    </h2>
+                    <p class="max-w-2xl mx-auto text-white/40 text-lg">
+                        Transforming your digital presence with a comprehensive suite of high-end design, marketing, and development solutions.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Graphic Design -->
+                    <div class="spec-card group animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="spec-icon-wrap">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="spec-title">Graphic Design</h3>
+                        <p class="spec-desc">We create visually appealing designs that capture attention and strengthen brand identity.</p>
+                        
+                        <div class="spec-list-wrap">
+                            <span class="spec-list-label">Work Includes:</span>
+                            <ul class="spec-list">
+                                <li>Social Media Posts (FB/IG)</li>
+                                <li>Business Flyers & Posters</li>
+                                <li>Brand Identity Concepts</li>
+                                <li>Marketing Creatives</li>
+                            </ul>
+                        </div>
+                        <div class="spec-footer">
+                            <span class="spec-tag">Focus: Modern & Clean</span>
+                        </div>
+                    </div>
+
+                    <!-- Video Editing -->
+                    <div class="spec-card group animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="spec-icon-wrap">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3 class="spec-title">Video Editing</h3>
+                        <p class="spec-desc">We produce engaging videos that boost audience retention and brand visibility.</p>
+                        
+                        <div class="spec-list-wrap">
+                            <span class="spec-list-label">Services Include:</span>
+                            <ul class="spec-list">
+                                <li>YouTube Video Editing</li>
+                                <li>Short-form (Reels/TikTok)</li>
+                                <li>Motion Graphics & VFX</li>
+                                <li>Color & Audio Grading</li>
+                            </ul>
+                        </div>
+                        <div class="spec-footer">
+                            <span class="spec-tag">Style: High-Impact</span>
+                        </div>
+                    </div>
+
+                    <!-- Digital Marketing -->
+                    <div class="spec-card group animate-on-scroll" style="transition-delay: 0.3s;">
+                        <div class="spec-icon-wrap">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="spec-title">Digital Marketing</h3>
+                        <p class="spec-desc">We develop and execute strategies that drive traffic, leads, and sales.</p>
+                        
+                        <div class="spec-list-wrap">
+                            <span class="spec-list-label">Services Include:</span>
+                            <ul class="spec-list">
+                                <li>SEO (On-page & Off-page)</li>
+                                <li>SMM & Management</li>
+                                <li>FB & Google Ads</li>
+                                <li>Funnel & Lead Gen</li>
+                            </ul>
+                        </div>
+                        <div class="spec-footer">
+                            <span class="spec-tag">Priority: High ROI</span>
+                        </div>
+                    </div>
+
+                    <!-- CMS Development -->
+                    <div class="spec-card group animate-on-scroll" style="transition-delay: 0.4s;">
+                        <div class="spec-icon-wrap">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="spec-title">CMS Development</h3>
+                        <p class="spec-desc">We build responsive, SEO-ready websites to establish your digital presence and drive sales.</p>
+                        
+                        <div class="spec-list-wrap">
+                            <span class="spec-list-label">Services Include:</span>
+                            <ul class="spec-list">
+                                <li>WordPress & WooCommerce</li>
+                                <li>Theme Customization</li>
+                                <li>Landing Pages for Leads</li>
+                                <li>Speed & SEO Optimization</li>
+                            </ul>
+                        </div>
+                        <div class="spec-footer">
+                            <span class="spec-tag">Task: Performance Sites</span>
                         </div>
                     </div>
                 </div>
@@ -128,137 +301,320 @@
             </div>
         </section>
 
-        <section id="portfolio" class="expertise">
-            <div class="container">
-                <h2 class="section-title">My <span>Portfolio</span></h2>
-                <div class="expertise-grid">
-                    <!-- Graphic Design -->
-                    <div class="expertise-card">
-                        <div class="icon">🎨</div>
-                        <h3>Graphic Design</h3>
-                        <div class="card-content">
-                            <p>We create visually appealing designs that capture attention and strengthen brand
-                                identity.</p>
-                            <h4>Work Includes:</h4>
-                            <ul>
-                                <li>Social Media Posts (Facebook, Instagram Ads)</li>
-                                <li>Business Flyers, Posters & Banners</li>
-                                <li>Brand Identity & Visual Concepts</li>
-                                <li>Marketing Creatives for Campaigns</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <p>Focus: Modern, clean, and engaging visuals.</p>
-                        </div>
-                    </div>
+        <section id="projects" class="relative py-24 sm:py-32 overflow-hidden bg-[#030712]">
+  
 
-                    <!-- Video Editing -->
-                    <div class="expertise-card">
-                        <div class="icon">🎬</div>
-                        <h3>Video Editing</h3>
-                        <div class="card-content">
-                            <p>We produce engaging videos that boost audience retention and brand visibility.</p>
-                            <h4>Services Include:</h4>
-                            <ul>
-                                <li>YouTube Video Editing</li>
-                                <li>Short-form Content (Reels, TikTok)</li>
-                                <li>Motion Graphics & Visual Effects</li>
-                                <li>Color Grading & Audio Enhancement</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <p>Style: High-impact, fast-paced, and engaging.</p>
-                        </div>
-                    </div>
+  <div class="absolute inset-0 projects-grid-bg"></div>
 
-                    <!-- Digital Marketing -->
-                    <div class="expertise-card">
-                        <div class="icon">📈</div>
-                        <h3>Digital Marketing</h3>
-                        <div class="card-content">
-                            <p>We develop and execute strategies that drive traffic, leads, and sales.</p>
-                            <h4>Services Include:</h4>
-                            <ul>
-                                <li>SEO (On-page & Off-page)</li>
-                                <li>Social Media Marketing & Management</li>
-                                <li>Facebook & Google Ads Campaigns</li>
-                                <li>Lead Generation & Funnel Strategy</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <p>Priority: Data-driven strategies & high ROI.</p>
-                        </div>
-                    </div>
+  <div class="projects-orb bg-purple-600" style="width: 420px; height: 420px; top: 10%; right: -7%;"></div>
+  <div class="projects-orb bg-cyan-500" style="width: 340px; height: 340px; bottom: 8%; left: -5%; animation-delay: 2s;"></div>
+  <div class="projects-orb bg-fuchsia-500" style="width: 260px; height: 260px; top: 42%; left: 40%; animation-delay: 4s;"></div>
 
-                    <!-- CMS Website Development -->
-                    <div class="expertise-card">
-                        <div class="icon">🌐</div>
-                        <h3>CMS Development</h3>
-                        <div class="card-content">
-                            <p>We build responsive, SEO-ready websites to establish your digital presence and drive
-                                sales.</p>
-                            <h4>Services Include:</h4>
-                            <ul>
-                                <li>WordPress Design & WooCommerce Setup</li>
-                                <li>Theme Customization & Site Management</li>
-                                <li>Landing Pages for Lead Gen</li>
-                                <li>Speed Optimization & Basic SEO Setup</li>
-                                <li>Fully Responsive Mobile-Friendly Design</li>
-                            </ul>
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(168,85,247,0.10),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(34,211,238,0.08),transparent_28%)]"></div>
+
+  <div class="projects-top-line"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="text-center mb-14">
+      <div class="inline-flex justify-center mb-6">
+        <div class="projects-badge">
+          <span class="relative flex h-2.5 w-2.5">
+            <span class="absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75 animate-ping"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-400"></span>
+          </span>
+          <span class="text-purple-300 text-xs sm:text-sm font-medium tracking-[0.22em] uppercase">
+            Portfolio
+          </span>
+        </div>
+      </div>
+
+      <h2 class="font-outfit text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-5">
+        <span class="projects-heading-gradient">Featured</span><br>
+        <span class="text-white">Projects</span>
+      </h2>
+
+      <p class="max-w-3xl mx-auto text-white/50 text-base sm:text-lg leading-relaxed">
+        A curated collection of premium landing pages and digital experiences designed to
+        captivate audiences, elevate brands, and drive real results.
+      </p>
+    </div>
+
+    <div class="projects-filter-wrap" id="projectsFilterTabs">
+      <button class="projects-filter-btn active" data-category="All">All</button>
+      <button class="projects-filter-btn" data-category="Restaurant">Restaurant</button>
+      <button class="projects-filter-btn" data-category="Digital Product">Digital Product</button>
+      <button class="projects-filter-btn" data-category="E-book">E-book</button>
+      <button class="projects-filter-btn" data-category="Action Figure">Action Figure</button>
+      <button class="projects-filter-btn" data-category="Food Product">Food Product</button>
+    </div>
+
+    <div class="projects-list" id="projectsGridFuture"></div>
+  </div>
+
+  
+</section>
+
+<section id="pricing" class="relative py-24 sm:py-32 overflow-hidden bg-[#030712]">
+  
+
+  <div class="absolute inset-0 pricing-grid-bg"></div>
+
+  <div class="pricing-orb bg-purple-600" style="width: 460px; height: 460px; top: 0; left: 50%; transform: translateX(-50%);"></div>
+  <div class="pricing-orb bg-cyan-500" style="width: 280px; height: 280px; bottom: 12%; left: -4%; animation-delay: 2s;"></div>
+  <div class="pricing-orb bg-fuchsia-500" style="width: 260px; height: 260px; top: 35%; right: -4%; animation-delay: 4s;"></div>
+
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(168,85,247,0.12),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(34,211,238,0.08),transparent_28%)]"></div>
+
+  <div class="pricing-top-line"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="inline-flex justify-center mb-6">
+        <div class="pricing-badge">
+          <span class="relative flex h-2.5 w-2.5">
+            <span class="absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75 animate-ping"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-purple-400"></span>
+          </span>
+          <span class="text-purple-300 text-xs sm:text-sm font-medium tracking-[0.22em] uppercase">
+            Pricing
+          </span>
+        </div>
+      </div>
+
+      <h2 class="font-outfit text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-5">
+        <span class="pricing-heading-gradient">Premium</span><br>
+        <span class="text-white">Professional Services</span>
+      </h2>
+
+      <p class="max-w-3xl mx-auto text-white/50 text-base sm:text-lg leading-relaxed">
+        Transparent pricing across Web Branding, Ads Management, and Video Marketing services.
+      </p>
+    </div>
+
+    <!-- Pricing Category Filters -->
+    <div class="projects-filter-wrap mb-14" id="pricingFilterTabs">
+      <button class="pricing-filter-btn active" data-category="All">All Services</button>
+      <button class="pricing-filter-btn" data-category="Web">Web & Branding</button>
+      <button class="pricing-filter-btn" data-category="Ads">Ads Management</button>
+      <button class="pricing-filter-btn" data-category="Video">Video & Social</button>
+    </div>
+
+    <div class="pricing-list" id="pricingGridFuture"></div>
+  </div>
+
+  
+</section>
+
+        <section id="why-me" class="relative py-24 sm:py-32 overflow-hidden bg-[#030712]">
+            <div class="absolute inset-0 why-me-grid-bg"></div>
+            <div class="why-me-orb bg-purple-600" style="width: 400px; height: 400px; top: -10%; left: -5%;"></div>
+            <div class="why-me-orb bg-cyan-500" style="width: 300px; height: 300px; bottom: 10%; right: -5%; animation-delay: 2s;"></div>
+            
+            <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="font-outfit text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-5">
+                        <span class="why-me-heading-gradient">Why Work</span><br>
+                        <span class="text-white">With Me</span>
+                    </h2>
+                    <p class="max-w-3xl mx-auto text-white/50 text-base sm:text-lg">
+                        Six reasons clients keep coming back for premium design, strong visual identity, and reliable execution.
+                    </p>
+                </div>
+
+                <div class="why-me-grid">
+                    <div class="why-me-card">
+                        <div class="why-me-icon-wrap">
+                            <i class="fas fa-chart-line"></i>
                         </div>
-                        <div class="card-footer">
-                            <p>Focus: High-Performance, Scalable Sites.</p>
+                        <h3>High-Converting Layouts</h3>
+                        <p>Every design decision is guided by conversion logic, helping turn visitors into leads and paying clients.</p>
+                    </div>
+                    <div class="why-me-card">
+                        <div class="why-me-icon-wrap">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Clean Modern Aesthetics</h3>
+                        <p>Minimal yet bold visuals that feel premium, contemporary, and clearly distinct from generic templates.</p>
+                    </div>
+                    <div class="why-me-card">
+                        <div class="why-me-icon-wrap">
+                            <i class="fas fa-fingerprint"></i>
+                        </div>
+                        <h3>Strong Visual Identity</h3>
+                        <p>Your brand gets a look that feels professional, memorable, and trustworthy from the first impression.</p>
+                    </div>
+                    <div class="why-me-card">
+                        <div class="why-me-icon-wrap">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile-First Responsive</h3>
+                        <p>Flawless performance and balanced visuals across mobile, tablet, laptop, and large desktop screens.</p>
+                    </div>
+                    <div class="why-me-card">
+                        <div class="why-me-icon-wrap">
+                            <i class="fas fa-pen-nib"></i>
+                        </div>
+                        <h3>Creative Presentation</h3>
+                        <p>Every project is custom-crafted to tell a visual story instead of feeling like another recycled layout.</p>
+                    </div>
+                    <div class="why-me-card">
+                        <div class="why-me-icon-wrap">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Fast & Focused Execution</h3>
+                        <p>Tight deadlines, clear communication, and quality-focused delivery so your project moves forward without delay.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="relative py-24 sm:py-32 overflow-hidden bg-[#030712]">
+            <div class="absolute inset-0 process-grid-bg"></div>
+            <div class="process-glow-orb bg-indigo-500/10 w-[700px] h-[700px] rounded-full blur-[140px] absolute -top-[10%] left-1/2 -translate-x-1/2"></div>
+            
+            <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <div class="workflow-badge-wrap mb-6">
+                        <span class="workflow-badge">Project Roadmap</span>
+                    </div>
+                    <h2 class="font-outfit text-4xl sm:text-6xl font-bold tracking-tight mb-6">
+                        <span class="workflow-heading-gradient">Our Precision</span><br>
+                        <span class="text-white">Workflow</span>
+                    </h2>
+                    <p class="max-w-2xl mx-auto text-white/40 text-lg">
+                        A streamlined five-step journey from initial spark to a high-impact digital presence, designed for clarity and premium results.
+                    </p>
+                </div>
+
+                <div class="workflow-grid-container">
+                    <div class="workflow-steps-wrapper">
+                        <!-- Step 1 -->
+                        <div class="workflow-item">
+                            <div class="workflow-card group">
+                                <div class="workflow-number">01</div>
+                                <div class="workflow-icon">
+                                    <i class="fas fa-magnifying-glass"></i>
+                                </div>
+                                <h3>Discovery</h3>
+                                <p>Deep dive into your brand, goals, and audience to build a strategic foundation.</p>
+                                <div class="workflow-hover-glow"></div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="workflow-item">
+                            <div class="workflow-card group">
+                                <div class="workflow-number">02</div>
+                                <div class="workflow-icon">
+                                    <i class="fas fa-compass"></i>
+                                </div>
+                                <h3>Planning</h3>
+                                <p>Strategic wireframing and user flow planning for a seamless digital journey.</p>
+                                <div class="workflow-hover-glow"></div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="workflow-item">
+                            <div class="workflow-card group">
+                                <div class="workflow-number">03</div>
+                                <div class="workflow-icon">
+                                    <i class="fas fa-wand-magic-sparkles"></i>
+                                </div>
+                                <h3>Design Direction</h3>
+                                <p>Tailored visual concepts and style exploration to define your unique brand.</p>
+                                <div class="workflow-hover-glow"></div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="workflow-item">
+                            <div class="workflow-card group">
+                                <div class="workflow-number">04</div>
+                                <div class="workflow-icon">
+                                    <i class="fas fa-code-merge"></i>
+                                </div>
+                                <h3>Build & Polish</h3>
+                                <p>Pixel-perfect development with refined responsiveness and visual micro-interactions.</p>
+                                <div class="workflow-hover-glow"></div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="workflow-item">
+                            <div class="workflow-card group">
+                                <div class="workflow-number">05</div>
+                                <div class="workflow-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h3>Launch Support</h3>
+                                <p>Final QA and deployment support to ensure everything goes live smoothly.</p>
+                                <div class="workflow-hover-glow"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="experience" class="experience">
-            <div class="container">
-                <h2 class="section-title">Experience & <span>Value</span></h2>
-                <div class="highlights-grid">
-                    <div class="highlights-column">
-                        <h3 class="column-title">💼 Highlights</h3>
-                        <ul class="highlight-list">
-                            <li class="highlight-item">
-                                <h4>360+ Hours</h4>
-                                <p>Delivered 360+ hours of digital marketing training.</p>
-                            </li>
-                            <li class="highlight-item">
-                                <h4>Enhanced Visibility</h4>
-                                <p>Helped businesses improve online visibility and lead generation.</p>
-                            </li>
-                            <li class="highlight-item">
-                                <h4>Real-World Marketing</h4>
-                                <p>Experience in real-world marketing and customer engagement.</p>
-                            </li>
-                            <li class="highlight-item">
-                                <h4>Strategy Builder</h4>
-                                <p>Strong ability to simplify complex strategies into actionable results.</p>
-                            </li>
-                        </ul>
+        <section id="testimonials" class="relative py-24 sm:py-32 overflow-hidden bg-[#030712]">
+            <div class="absolute inset-0 testimonials-grid-bg"></div>
+            <div class="testimonials-orb bg-fuchsia-600" style="width: 500px; height: 500px; top: 20%; right: -10%;"></div>
+            
+            <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="font-outfit text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-5">
+                        <span class="testimonials-heading-gradient">Client</span><br>
+                        <span class="text-white">Feedback</span>
+                    </h2>
+                    <p class="max-w-3xl mx-auto text-white/50 text-base sm:text-lg">
+                        Words from happy clients who wanted premium landing pages with real visual impact.
+                    </p>
+                </div>
+
+                <div class="testimonials-grid" id="testimonialsGrid">
+                    <!-- Testimonial cards will be here -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"SHAHADAT amar landing page ta ekdom premium look dise. Scroll korte korte pura cinematic feel ashchilo."</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-info">
+                                <h4>Rakib Hasan</h4>
+                                <span>Entrepreneur</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="highlights-column">
-                        <h3 class="column-title">🌟 Why Me</h3>
-                        <ul class="highlight-list">
-                            <li class="highlight-item">
-                                <h4>Client-Focused</h4>
-                                <p>Approach with clear communication and fast delivery.</p>
-                            </li>
-                            <li class="highlight-item">
-                                <h4>Strategic Mindset</h4>
-                                <p>Blending creative vision with data-driven strategy.</p>
-                            </li>
-                            <li class="highlight-item">
-                                <h4>Detail-Oriented</h4>
-                                <p>Commitment to quality and measurable results.</p>
-                            </li>
-                            <li class="highlight-item">
-                                <h4>Growth Partner</h4>
-                                <p>Dedicated to bringing your digital ideas to life.</p>
-                            </li>
-                        </ul>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"The page felt custom-made, high-end, and way better than any template-based design I used before."</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-info">
+                                <h4>Alex Morgan</h4>
+                                <span>Digital Creator</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Design ta clean, modern, ar mobile e o darun responsive chilo. Delivery o khub fast."</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-info">
+                                <h4>Sadia Jannat</h4>
+                                <span>Marketing Lead</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -283,88 +639,163 @@
             </div>
         </section>
 
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">📞 Let’s Work <span>Together</span></h2>
-                <p class="form-tagline">Have something to write?</p>
-                <div class="contact-grid">
-                    <div class="contact-form-container">
-                        <form id="contact-form" action="https://formspree.io/f/xzdydkgo" method="POST" class="premium-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="first-name">First Name</label>
-                                    <input type="text" id="first-name" name="first_name" placeholder="Your name.." required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="last-name">Last Name</label>
-                                    <input type="text" id="last-name" name="last_name" placeholder="Your last name.." required>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" placeholder="Your Email.." required>
-                            </div>
 
-                            <div class="form-group">
-                                <label for="country">Country</label>
-                                <select id="country" name="country">
-                                    <option value="bangladesh">Bangladesh</option>
-                                    <option value="australia" selected>Australia</option>
-                                    <option value="usa">USA</option>
-                                    <option value="uk">UK</option>
-                                    <option value="canada">Canada</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px" required></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary submit-btn">Submit Message</button>
-                        </form>
-                        <div id="form-response" class="form-response-message"></div>
-                    </div>
-
-                    <div class="contact-info">
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <span class="icon">📧</span>
-                                <a href="mailto:sh0479056@gmail.com">sh0479056@gmail.com</a>
-                            </div>
-                            <div class="contact-item">
-                                <span class="icon">📞</span>
-                                <a href="tel:+8801703610001">+8801703610001</a>
-                            </div>
-                            <div class="contact-item">
-                                <span class="icon">📍</span>
-                                <span>Mohammadpur, Dhaka 1207</span>
-                            </div>
-                        </div>
-                        <div class="contact-card">
-                            <a href="https://www.google.com/maps/search/Mohammadpur,+Dhaka+1207" target="_blank"
-                                class="btn btn-secondary">Open in Google Maps</a>
-                        </div>
-                    </div>
+        <section id="cta" class="relative py-24 sm:py-32 overflow-hidden bg-[#030712] border-t border-white/5">
+            <div class="absolute inset-0 cta-gradient-bg"></div>
+            
+            <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+                <h2 class="font-outfit text-4xl sm:text-6xl font-bold tracking-tight mb-8">
+                    <span class="text-white">Ready to Elevate Your</span><br>
+                    <span class="cta-heading-gradient">Digital Presence?</span>
+                </h2>
+                <p class="text-white/50 text-xl mb-12 max-w-3xl mx-auto">
+                    Let’s build something extraordinary. Whether it’s a landing page, a brand experience, or a complete digital presence — I’m here to craft something that feels premium, modern, and built to impress.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://wa.link/pe4nfi" target="_blank" class="sk-btn sk-btn-whatsapp primary-cta">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp Me</span>
+                        <i class="fas fa-arrow-right ml-2 opacity-70"></i>
+                    </a>
+                    <a href="mailto:sh047956@gmail.com" class="sk-btn sk-btn-call secondary-cta">
+                        <i class="fas fa-envelope"></i>
+                        <span>Send an Email</span>
+                    </a>
                 </div>
             </div>
         </section>
-    </main>
+    <footer class="relative pt-32 pb-16 overflow-hidden bg-[#02040a]">
+        <!-- Footer Background Elements -->
+        <div class="absolute inset-0 footer-grid-pattern"></div>
+        <div class="footer-orb-1 bg-indigo-600/10 w-[600px] h-[600px] rounded-full blur-[140px] absolute -top-[10%] -left-[10%]"></div>
+        <div class="footer-orb-2 bg-magenta-600/10 w-[500px] h-[500px] rounded-full blur-[120px] absolute bottom-[-10%] right-[-10%]"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <!-- Glassmorphic Footer Card -->
+            <div class="footer-glass-card">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+                    <!-- Column 1: Brand & Social Chips -->
+                    <div class="lg:col-span-1">
+                        <a href="#home" class="font-outfit text-2xl font-black text-white mb-6 block">
+                            SHAHADAT <span class="text-indigo-500 uppercase">HOSEN</span>
+                        </a>
+                        <p class="text-white/40 text-base leading-relaxed">
+                            Premium landing page design and digital marketing strategies that transform ideas into stunning digital experiences.
+                        </p>
+                    </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://www.facebook.com/shaddat.hossen.3" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/shahadat.hosen.shazed/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/shazed0001/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://x.com/ShahadatHoshen3" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <!-- Column 2: Contact -->
+                    <div>
+                        <h4 class="footer-heading">Contact Details</h4>
+                        <ul class="space-y-6">
+                            <li>
+                                <a href="tel:01600059755" class="footer-contact-item group">
+                                    <div class="contact-icon-circle"><i class="fas fa-phone-alt"></i></div>
+                                    <div class="flex flex-col">
+                                        <span class="text-white/30 text-xs uppercase tracking-wider">Phone</span>
+                                        <span class="text-white group-hover:text-indigo-400 transition-colors">01600059755</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.link/pe4nfi" target="_blank" class="footer-contact-item group">
+                                    <div class="contact-icon-circle"><i class="fab fa-whatsapp"></i></div>
+                                    <div class="flex flex-col">
+                                        <span class="text-white/30 text-xs uppercase tracking-wider">WhatsApp</span>
+                                        <span class="text-white group-hover:text-indigo-400 transition-colors">Message Me</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:sh047956@gmail.com" class="footer-contact-item group">
+                                    <div class="contact-icon-circle"><i class="fas fa-envelope"></i></div>
+                                    <div class="flex flex-col">
+                                        <span class="text-white/30 text-xs uppercase tracking-wider">Email</span>
+                                        <span class="text-white group-hover:text-indigo-400 transition-colors">sh047956@gmail.com</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/shaddat.hossen.3" target="_blank" class="footer-contact-item group">
+                                    <div class="contact-icon-circle"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="flex flex-col">
+                                        <span class="text-white/30 text-xs uppercase tracking-wider">Facebook</span>
+                                        <span class="text-white group-hover:text-indigo-400 transition-colors">Visit Profile</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Social Links -->
+                    <div>
+                        <h4 class="footer-heading">Social Profiles</h4>
+                        <div class="flex flex-col gap-3">
+                            <a href="https://www.instagram.com/shahadat.hosen.shazed/?hl=en" target="_blank" class="social-profile-btn">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/shazed0001/" target="_blank" class="social-profile-btn">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://www.behance.net/shahadathosen21/moodboards" target="_blank" class="social-profile-btn">
+                                <i class="fab fa-behance"></i>
+                                <span>Behance</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Column 4: Quick Navigation -->
+                    <div>
+                        <h4 class="footer-heading">Navigate</h4>
+                        <ul class="space-y-4">
+                            <li><a href="#projects" class="footer-link-premium">Portfolio</a></li>
+                            <li><a href="#pricing" class="footer-link-premium">Pricing</a></li>
+                            <li><a href="#process" class="footer-link-premium">Process</a></li>
+                            <li><a href="#cta" class="footer-link-premium">Get in Touch</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer Separator -->
+                <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-white/20 text-sm">© 2026 SHAHADAT HOSEN. ALL RIGHTS RESERVED.</p>
+                    <p class="text-white/20 text-xs italic">CRAFTING DIGITAL EXCELLENCE</p>
+                </div>
             </div>
-            <p>&copy; 2026 Shahadat Hosen. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Floating Navigation Dock -->
+    <div id="floating-dock" class="sk-floating-dock">
+        <div class="dock-inner">
+            <a href="#home" class="dock-item">
+                <i class="fas fa-home"></i>
+                <span class="dock-label">Home</span>
+            </a>
+            <a href="#projects" class="dock-item">
+                <i class="fas fa-briefcase"></i>
+                <span class="dock-label">Projects</span>
+            </a>
+            <a href="#pricing" class="dock-item">
+                <i class="fas fa-dollar-sign"></i>
+                <span class="dock-label">Pricing</span>
+            </a>
+            
+            <div class="dock-actions">
+                <a href="https://wa.link/pe4nfi" target="_blank" class="dock-btn-premium dock-btn-purple">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="tel:01600059755" class="dock-btn-premium dock-btn-teal">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Call</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
-
 </html>
